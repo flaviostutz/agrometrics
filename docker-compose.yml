@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+
+  agrometrics:
+    build: .
+    image: flaviostutz/agrometrics
+    ports:
+      - 8585:8888
+      - 7007:6006
+    volumes:
+      - ./notebooks:/notebooks
+
